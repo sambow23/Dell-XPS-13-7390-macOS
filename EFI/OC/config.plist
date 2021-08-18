@@ -12,7 +12,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -20,7 +20,15 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PNLF-CFL.aml</string>
+				<string>SSDT-AWAC_N-RTC_Y.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-AC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -109,6 +117,22 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GAUS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-FWHD.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
