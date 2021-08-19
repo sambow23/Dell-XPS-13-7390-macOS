@@ -121,11 +121,11 @@ Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManage
 
 Special Thanks
 -----
-[OSXLatitude](https://osxlatitude.com/)
-[Baio77 @ osxlatitude.com](https://osxlatitude.com/)
-[Jake Lo @ osxlatitude.com](https://osxlatitude.com/)
-[red-green](https://github.com/red-green)
-Apple for macOS
+- [OSXLatitude](https://osxlatitude.com/)
+- [Baio77 @ osxlatitude.com](https://osxlatitude.com/)
+- [Jake Lo @ osxlatitude.com](https://osxlatitude.com/)
+- [red-green](https://github.com/red-green)
+- Apple for macOS
 
 License
 -----
