@@ -34,10 +34,10 @@ Hardware compatibility
 - iMessage and iCloud
 - AirPlay
 - USB-C functionality on the TB3 ports
+- HDMI/DP via USB-C
 
 **What does not work/disabled:**
 - Internal webcam with Facetime (Disabled)
-- HDMI via USB-C
 - Combo Jack
 
 **Not tested:**
