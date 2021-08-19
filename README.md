@@ -1,4 +1,5 @@
 Dell XPS 13 7390
+<img src="https://i.imgur.com/R0RSyT7.jpg" width="1000">
 ===
 
 
@@ -110,6 +111,8 @@ Not tested
 Battery
 -----
 Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManager.kext`
+<img src="https://i.imgur.com/KEqblVy.png" width="410">
+<img src="https://i.imgur.com/ZITbTK2.png" width="700">
 
 Special Thanks
 -----
