@@ -50,11 +50,18 @@ Hardware compatibility
 - Apple Watch Unlock 
 
 
+CFG-Lock
+----
+[You need to disable CFG-Lock in order to boot this EFI!](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock)
+
+`setup_var CpuSetup 0x3e 0x0` (for BIOS 1.9.0)
+
 CPU
 -----
 The [i7-10710U](https://ark.intel.com/content/www/us/en/ark/products/196448/intel-core-i710710u-processor-12m-cache-up-to-4-70-ghz.html) needs `Cpuid1Data` and `Cpuid1Mask` patches in OpenCore to prevent very early kernel panics. Power managment works as expected after using [CPUFriend](https://github.com/acidanthera/CPUFriend) and [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend), with a base clock of 1.1 GHz and can boost all the way up to 4.7 GHz (idles at 800 MHz).
 
 <img src="https://i.imgur.com/K2Ni540.png" width="410">
+
 
 GPU/Display
 -----
