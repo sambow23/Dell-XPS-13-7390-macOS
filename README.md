@@ -15,8 +15,6 @@ Specs:
 Hardware compatibility
 ---
 
-TL;DR - 
-
 **What works:**
 
 - CPU power management
@@ -27,6 +25,7 @@ TL;DR -
 - Bluetooth Audio
 - Sleep, lid sleep and lid wake
 - Trackpad including gestures
+- Internal Speakers
 - Internal microphone
 - All USB ports
 - Screen full resolution, brightness
@@ -38,8 +37,8 @@ TL;DR -
 
 **What does not work/disabled:**
 - Internal webcam with Facetime (Disabled)
-- Sound (Speaker/Headphone outputs are silent)
 - HDMI via USB-C
+- Combo Jack
 
 **Not tested:**
 - Virtualization (VT-x)
