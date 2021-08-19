@@ -52,7 +52,7 @@ Hardware compatibility
 
 CPU
 -----
-The [i7-10710U](https://ark.intel.com/content/www/us/en/ark/products/196448/intel-core-i710710u-processor-12m-cache-up-to-4-70-ghz.html) needs Cpuid1Data and Cpuid1Mask patches to prevent very early kernel panics. Power managment works as expected after using [CPUFriend](https://github.com/acidanthera/CPUFriend) and [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend), with a base clock of 1.1 GHz and can boost all the way up to 4.7 GHz (idles at 800 MHz).
+The [i7-10710U](https://ark.intel.com/content/www/us/en/ark/products/196448/intel-core-i710710u-processor-12m-cache-up-to-4-70-ghz.html) needs `Cpuid1Data` and `Cpuid1Mask` patches in OpenCore to prevent very early kernel panics. Power managment works as expected after using [CPUFriend](https://github.com/acidanthera/CPUFriend) and [CPUFriendFriend](https://github.com/corpnewt/CPUFriendFriend), with a base clock of 1.1 GHz and can boost all the way up to 4.7 GHz (idles at 800 MHz).
 
 <img src="https://i.imgur.com/K2Ni540.png" width="410">
 
@@ -66,7 +66,7 @@ The internal display brightness controls worked out of box when using `SSDT-PNLF
 
 SSD
 -----
-The `WDC PC SN520` NVME SSD worked out of the box without having to reformat with 4K sectors
+The `WDC PC SN520` NVME SSD worked out of the box without having to reformat with 4K sectors.
 Power management seems to be working with `NVMeFix.kext` but still drains the battery quite a bit, replacing it with a M.2 SATA SSD is recommended
 
 <img src="https://i.imgur.com/Su6ylau.png" width="700">
