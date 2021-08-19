@@ -1,9 +1,12 @@
 Dell XPS 13 7390
+---
 <img src="https://i.imgur.com/R0RSyT7.jpg" width="1000">
-===
+
 
 
 Specs:
+---
+
 - **CPU** : Intel Core i7-10710U 6C 12T 1.10GHz (4.70GHz turbo)
 - **RAM** : 8GB dual-channel 2133MHz LPDDR3
 - **GPU** : Intel UHD 630
@@ -66,6 +69,7 @@ SSD
 The `WDC PC SN520` NVME SSD worked out of the box without having to reformat with 4K sectors
 Power management seems to be working with `NVMeFix.kext` but still drains the battery quite a bit, replacing it with a M.2 SATA SSD is recommended
 
+<img src="https://i.imgur.com/Su6ylau.png" width="700">
 
 Wifi and Bluetooth
 -----
@@ -97,6 +101,7 @@ Combo Jack currently does not work (will be fixed sooner or later)
 USB
 -----
 USB works out of the box
+
 <img src="https://i.imgur.com/k6cpFhS.png" width="700">
 
 Display Outs
@@ -111,8 +116,8 @@ Not tested
 Battery
 -----
 Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManager.kext`
-<img src="https://i.imgur.com/KEqblVy.png" width="410">
 <img src="https://i.imgur.com/ZITbTK2.png" width="700">
+<img src="https://i.imgur.com/KEqblVy.png" width="300">
 
 Special Thanks
 -----
