@@ -72,7 +72,7 @@ Sadly the Intel AX200 is soldered to the motherboard, but does work thanks to th
 Wi-Fi and and Bluetooth work out of the box provided you use `AirportItlwm.kext`, `IntelBluetoothFirmware.kext`, and `IntelBluetoothInjector.kext`
 
 <img src="https://i.imgur.com/RVzkHnQ.png" width="700">
-<img src="https://i.imgur.com/WKdEeq8.png" width="700">
+<img src="https://i.imgur.com/WKdEeq8.png" width="410">
 
 Sleep
 -----
