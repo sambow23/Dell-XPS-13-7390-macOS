@@ -74,7 +74,7 @@ The internal display brightness controls worked out of box when using `SSDT-PNLF
 SSD
 -----
 The `WDC PC SN520` NVME SSD worked out of the box without having to reformat with 4K sectors.
-Power management seems to be working with `NVMeFix.kext` but still drains the battery quite a bit, replacing it with a M.2 SATA SSD is recommended
+Power management is working with `NVMeFix.kext` 
 
 <img src="https://i.imgur.com/Su6ylau.png" width="700">
 
@@ -125,6 +125,9 @@ Battery
 Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManager.kext`
 <img src="https://i.imgur.com/ZITbTK2.png" width="700">
 <img src="https://i.imgur.com/KEqblVy.png" width="300">
+
+There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.
+You can save some power by undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
 
 Special Thanks
 -----
