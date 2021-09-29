@@ -16,6 +16,7 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
