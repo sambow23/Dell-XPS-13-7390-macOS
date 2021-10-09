@@ -54,7 +54,7 @@ CFG-Lock
 ----
 [You need to disable CFG-Lock in order to boot this EFI!](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock)
 
-`setup_var CpuSetup 0x3e 0x0` (for BIOS 1.9.0)
+`setup_var 0x3e 0x0` (for BIOS 1.9.0)
 
 CPU
 -----
@@ -128,6 +128,7 @@ Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManage
 
 There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.
 You can save some power by undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
+I use the
 
 Special Thanks
 -----
