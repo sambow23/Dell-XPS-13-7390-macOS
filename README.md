@@ -130,6 +130,12 @@ There is some drain compared to Windows/Linux, I have not found the cause but th
 You can save some power by undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
 I use the
 
+I use [Power Manager](https://www.dssw.co.uk/powermanager/) to apply these offsets on boot and wake from sleep (these offsets may not work for every configuration, take caution and ymmv.)
+
+`voltageshift offset -100 -100 -100 -100 -100 -100 -100`
+
+`voltageshift powerlimit 10 15`
+
 Special Thanks
 -----
 - [OSXLatitude](https://osxlatitude.com/)
