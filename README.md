@@ -128,7 +128,7 @@ Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManage
 
 There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.
 You can save some power by undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
-I use the
+
 
 I use [Power Manager](https://www.dssw.co.uk/powermanager/) to apply these offsets on boot and wake from sleep (these offsets may not work for every configuration, take caution and ymmv.)
 
