@@ -49,14 +49,16 @@ Hardware compatibility
 - Apple Watch Unlock 
 
 **Things to fix**
-- High Temps/CPU Power Hog (ACPI gpe6F to blame)
+- High Temps/CPU Power Hog (ACPI gpe6F to blame) (might be fixed now)
 - Combo Jack
 
 Monterey
 ----
 Please use the EFI inside the `Monterey` folder for macOS Monterey
 
-Everything that worked in macOS Big Sur seems to work perfectly fine here.
+Everything that worked in macOS Big Sur works here.
+
+The dreaded battery drain issue should be fixed now that gpe6F has been disabled via ACPI Patch
 
 CFG-Lock
 ----
