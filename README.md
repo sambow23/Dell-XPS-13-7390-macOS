@@ -49,6 +49,13 @@ Hardware compatibility
 - Virtualization (VT-x)
 - Apple Watch Unlock 
 
+**Things to fix**
+- High Temps/CPU Power Hog (ACPI gpe6F to blame)
+
+Monterey
+----
+Please use the EFI inside the `Monterey` folder for macOS Monterey
+Everything that worked in macOS Big Sur seems to work perfectly fine here.
 
 CFG-Lock
 ----
