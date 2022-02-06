@@ -55,6 +55,7 @@ Hardware compatibility
 Monterey
 ----
 Please use the EFI inside the `Monterey` folder for macOS Monterey
+
 Everything that worked in macOS Big Sur seems to work perfectly fine here.
 
 CFG-Lock
