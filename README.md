@@ -39,9 +39,9 @@ Hardware compatibility
 - AirPlay
 - USB-C functionality on the TB3 ports
 - HDMI/DP via USB-C
+- Internal Webcam
 
 **What does not work/disabled:**
-- Internal webcam with Facetime (Disabled)
 - Combo Jack
 - Thunderbolt 3
 
