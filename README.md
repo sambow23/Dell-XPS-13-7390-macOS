@@ -40,17 +40,19 @@ Hardware compatibility
 - USB-C functionality on the TB3 ports
 - HDMI/DP via USB-C
 - Internal Webcam
+- Virtualization (VT-x)
 
 **What does not work/disabled:**
 - Thunderbolt 3
 
 **Not tested:**
-- Virtualization (VT-x)
 - Apple Watch Unlock 
 
 **Things to fix**
-- High Temps/CPU Power Hog (ACPI gpe6F to blame) (might be fixed now)
 - Combo Jack
+
+**Needs further testing**
+- Fix for High temps/`kernel_task` 100% Usage
 
 Monterey
 ----
@@ -58,7 +60,7 @@ Please use the EFI inside the `Monterey` folder for macOS Monterey
 
 Everything that worked in macOS Big Sur works here.
 
-The dreaded battery drain issue should be fixed now that gpe6F has been disabled via ACPI Patch
+The dreaded battery drain issue should be fixed now that ACPI interrupt gpe6F has been disabled via ACPI Patch
 
 CFG-Lock
 ----
@@ -136,9 +138,10 @@ Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManage
 <img src="https://i.imgur.com/ZITbTK2.png" width="700">
 <img src="https://i.imgur.com/KEqblVy.png" width="300">
 
-There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.
-You can save some power by undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
+~~There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.~~
+The battery drain should be fixed as of commit [a6340b0](https://github.com/sambow23/Dell-XPS-13-7390-macOS/commit/a6340b06d363af5b0818fd45c757564282bfdf6a)
 
+If battery life is still worse than Windows or Linux try undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
 
 I use [Power Manager](https://www.dssw.co.uk/powermanager/) to apply these offsets on boot and wake from sleep (these offsets may not work for every configuration, take caution and ymmv.)
 
@@ -152,6 +155,7 @@ Special Thanks
 - [Baio77 @ osxlatitude.com](https://osxlatitude.com/)
 - [Jake Lo @ osxlatitude.com](https://osxlatitude.com/)
 - [red-green](https://github.com/red-green)
+- [Hervé @ osxlatitude.com](https://osxlatitude.com/)
 - Apple for macOS
 
 License
