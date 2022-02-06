@@ -42,7 +42,6 @@ Hardware compatibility
 - Internal Webcam
 
 **What does not work/disabled:**
-- Combo Jack
 - Thunderbolt 3
 
 **Not tested:**
@@ -51,6 +50,7 @@ Hardware compatibility
 
 **Things to fix**
 - High Temps/CPU Power Hog (ACPI gpe6F to blame)
+- Combo Jack
 
 Monterey
 ----
