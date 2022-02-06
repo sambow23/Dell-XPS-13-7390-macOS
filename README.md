@@ -39,10 +39,9 @@ Hardware compatibility
 - AirPlay
 - USB-C functionality on the TB3 ports
 - HDMI/DP via USB-C
+- Internal Webcam
 
 **What does not work/disabled:**
-- Internal webcam with Facetime (Disabled)
-- Combo Jack
 - Thunderbolt 3
 
 **Not tested:**
@@ -51,10 +50,12 @@ Hardware compatibility
 
 **Things to fix**
 - High Temps/CPU Power Hog (ACPI gpe6F to blame)
+- Combo Jack
 
 Monterey
 ----
 Please use the EFI inside the `Monterey` folder for macOS Monterey
+
 Everything that worked in macOS Big Sur seems to work perfectly fine here.
 
 CFG-Lock
