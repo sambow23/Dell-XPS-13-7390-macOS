@@ -1302,9 +1302,9 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF014270GU0000AD</string>
+			<string>C02035501GU0000FB</string>
 			<key>ProcessorType</key>
-			<integer>1803</integer>
+			<integer>1793</integer>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
@@ -1312,11 +1312,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookAir9,1</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFCJ0UGMNHP</string>
+			<string>C02D9XZGP3XY</string>
 			<key>SystemUUID</key>
-			<string>1120B347-59BF-4374-ABF7-372FF854C60C</string>
+			<string>20B504DD-FF62-436E-AA4C-83C468B29EAE</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
