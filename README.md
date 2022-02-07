@@ -46,13 +46,11 @@ Hardware compatibility
 - Thunderbolt 3
 
 **Not tested:**
-- Apple Watch Unlock 
+- Apple Watch Unlock
 
 **Things to fix**
 - Combo Jack
-
-**Needs further testing**
-- Fix for High temps/`kernel_task` 100% Usage
+- `ACPI interrupt gpe6F` needs to be disabled somehow
 
 Monterey
 ----
@@ -78,6 +76,7 @@ The [i7-10710U](https://ark.intel.com/content/www/us/en/ark/products/196448/inte
 GPU/Display
 -----
 Getting the Intel UHD Graphics 630 took quite a bit of effort to work properly, It uses the natively supported `device-id` `ig-platform-id`, but required framebuffer patches in order for the internal display and HDMI over USB-C to function correctly.
+The 4K version of this laptop should work fine without further patches.
 
 The internal display brightness controls worked out of box when using `SSDT-PNLF-CFL`.
 
@@ -138,10 +137,12 @@ Battery Capacity works when using proper SSDT hot-patching and `SMCBatteryManage
 <img src="https://i.imgur.com/ZITbTK2.png" width="700">
 <img src="https://i.imgur.com/KEqblVy.png" width="300">
 
-~~There is some drain compared to Windows/Linux, I have not found the cause but the CPU Package Power is always at 2W with 0% CPU Usage, resulting in much worse battery-life.~~
-The battery drain should be fixed as of commit [a6340b0](https://github.com/sambow23/Dell-XPS-13-7390-macOS/commit/a6340b06d363af5b0818fd45c757564282bfdf6a)
+~~The battery drain should be fixed as of commit [a6340b0](https://github.com/sambow23/Dell-XPS-13-7390-macOS/commit/a6340b06d363af5b0818fd45c757564282bfdf6a)~~
 
-If battery life is still worse than Windows or Linux try undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
+There is some drain compared to Windows/Linux, A non-working ACPI function GPE_L6F is eating CPU cycles for no reason, it can be easily fixed on linux with a one-line command
+`echo "disable" > /sys/firmware/acpi/interrupts/gpe6F`. It seems to be much more complicated on macOS, I tried using a ACPI hotpatch to rename `_L6F` to `XXXX` but it did not seem to have any effect on power usage.
+
+A decent workaround for now is to try undervolting with [VoltageShift](https://github.com/sicreative/VoltageShift)
 
 I use [Power Manager](https://www.dssw.co.uk/powermanager/) to apply these offsets on boot and wake from sleep (these offsets may not work for every configuration, take caution and ymmv.)
 
