@@ -58,8 +58,6 @@ Please use the EFI inside the `Monterey` folder for macOS Monterey
 
 Everything that worked in macOS Big Sur works here.
 
-The dreaded battery drain issue should be fixed now that ACPI interrupt gpe6F has been disabled via ACPI Patch
-
 CFG-Lock
 ----
 [You need to disable CFG-Lock in order to boot this EFI!](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock)
