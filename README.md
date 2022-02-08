@@ -58,13 +58,18 @@ Please use the EFI inside the `Monterey` folder for macOS Monterey
 
 Everything that worked in macOS Big Sur works here.
 
-The dreaded battery drain issue should be fixed now that ACPI interrupt gpe6F has been disabled via ACPI Patch
-
 CFG-Lock
 ----
-[You need to disable CFG-Lock in order to boot this EFI!](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock)
+[You need to disable CFG-Lock in order to boot this EFI!](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell)
 
-`setup_var 0x3e 0x0` (for BIOS 1.9.0)
+[Use this specific version of `grub_setup_var`](https://github.com/XDleader555/grub_setup_var/releases/tag/v1.0-alpha)
+
+
+| BIOS              | CFG Lock                      | Overclock Lock
+| ----------------- | ------------------------------| -----------------------------
+| `1.9.0`, `1.12.1`     | `setup_var CpuSetup 0x3E 0x0` | `setup_var CpuSetup 0xDA 0x0`
+
+
 
 CPU
 -----
