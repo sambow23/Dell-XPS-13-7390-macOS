@@ -16,10 +16,9 @@ Specs:
 - **Soundcard** : Realtek ALC299
 - **Battery** : 52WHr
 
-Hardware compatibility
----
+## Hardware compatibility
 
-**What works:**
+<details><summary>What works</summary>
 
 - CPU power management
 - Readng CPU temperature
@@ -40,17 +39,30 @@ Hardware compatibility
 - HDMI/DP via USB-C
 - Internal Webcam
 - Virtualization (VT-x)
+  
+ </details>
 
-**What does not work/disabled:**
+<details><summary>What does not work/disabled</summary>
+  
 - Thunderbolt 3
-
-**Not tested:**
+  
+</details>
+  
+<details><summary>Not tested</summary>
+  
 - Apple Watch Unlock
 - SideCar over USB and wireless
+  
+</details>
 
-**Things to fix**
+<details><summary>Things to fix</summary>
+  
 - Combo Jack / AppleALC high `kernel_task` CPU usage
 - `ACPI interrupt gpe6F` needs to be disabled somehow
+  
+<img src="https://i.imgur.com/8U6gjAX.png" width="300">
+
+</details>
 
 EFI Folders
 ----
