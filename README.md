@@ -34,7 +34,6 @@ Hardware compatibility
 - All USB ports
 - Screen full resolution, brightness
 - Battery precentage, charging
-- SideCar over USB and wireless
 - iMessage and iCloud
 - AirPlay
 - USB-C functionality on the TB3 ports
@@ -47,16 +46,20 @@ Hardware compatibility
 
 **Not tested:**
 - Apple Watch Unlock
+- SideCar over USB and wireless
 
 **Things to fix**
-- Combo Jack
+- Combo Jack / AppleALC high `kernel_task` CPU usage
 - `ACPI interrupt gpe6F` needs to be disabled somehow
 
-Monterey
+EFI Folders
 ----
-Please use the EFI inside the `Monterey` folder for macOS Monterey
+| Version                   | Description                      
+| --------------------------| --------------------------|
+| `Big Sur`                 | Is mostly deprecated and will not be provided any support.
+| `Monterey`                | Stable and up-to-date version of this EFI, provides a decent out-of-the-box experience.
+| `Monterey - Experimental` | Mostly for testing, should not be used as the daily driver. But can provide fixes for issues that may be in the stable build.
 
-Everything that worked in macOS Big Sur works here.
 
 CFG-Lock
 ----
@@ -77,6 +80,9 @@ The [i7-10710U](https://ark.intel.com/content/www/us/en/ark/products/196448/inte
 
 <img src="https://i.imgur.com/K2Ni540.png" width="410">
 
+It is recommended to cap the TDP to 10W with `VoltageShift` as it tends to boost more than it should during idle loads, can help with temperatures and battery life.
+
+`voltageshift powerlimit 10 10` 
 
 GPU/Display
 -----
@@ -115,11 +121,13 @@ Using `VoodooI2C.kext` and `VoodooI2CHID.kext`, the Trackpad works out of the bo
 Sound
 -----
 Sound works for the most part, but needs [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/RehabMan-CodecCommander-2018-1003.zip)
-Install `CodecCommander.kext` into `/OC/Kexts/`, then copy `hda-verb` to `/usr/local/bin` (Create the folder if it does not exist)
+Install `CodecCommander.kext` into `/OC/Kexts/` (if it does not already exist), then copy `hda-verb` to `/usr/local/bin` (Create the folder if it does not exist)
 <img src="https://i.imgur.com/xDZzmB3.png" width="700">
 <img src="https://i.imgur.com/40KWQdo.png" width="700">
 
 Combo Jack currently does not work (will be fixed sooner or later)
+
+AppleALC might cause high `kernel_task` CPU usage for some people, it is under investigation. If you are encountering this issue, please disable AppleALC in your OpenCore config. 
 
 USB
 -----
@@ -153,7 +161,6 @@ I use [Power Manager](https://www.dssw.co.uk/powermanager/) to apply these offse
 
 `voltageshift offset -100 -100 -100 -100 -100 -100 -100`
 
-`voltageshift powerlimit 10 15`
 
 Special Thanks
 -----
