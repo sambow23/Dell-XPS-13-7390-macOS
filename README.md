@@ -154,7 +154,7 @@ USB-C to HDMI/DP works out of the box once GPU is properly patched
 
 Thunderbolt
 -----
-Not tested
+Currently does not work, the controller is most likely causing severe idle power drain but should be disabled as of [27a4fcb](https://github.com/sambow23/Dell-XPS-13-7390-macOS/commit/27a4fcb40c00245ec281c9767fa172c81877af1b)
 
 Battery
 -----
