@@ -39,19 +39,15 @@ Specs:
 - HDMI/DP via USB-C
 - Internal Webcam
 - Virtualization (VT-x)
+- SideCar over USB
   
  </details>
 
 <details><summary>What does not work/disabled</summary>
   
 - Thunderbolt 3
-  
-</details>
-  
-<details><summary>Not tested</summary>
-  
 - Apple Watch Unlock
-- SideCar over USB and wireless
+- SideCar over wireless
   
 </details>
 
@@ -82,7 +78,7 @@ CFG-Lock
 
 | BIOS              | CFG Lock                      | Overclock Lock
 | ----------------- | ------------------------------| -----------------------------
-| `1.9.0`, `1.12.1`     | `setup_var CpuSetup 0x3E 0x0` | `setup_var CpuSetup 0xDA 0x0`
+| `1.9.0`, `1.12.1`, `1.13.0`     | `setup_var CpuSetup 0x3E 0x0` | `setup_var CpuSetup 0xDA 0x0`
 
 
 
@@ -115,7 +111,7 @@ Power management is working with `NVMeFix.kext`
 Wifi and Bluetooth
 -----
 Sadly the Intel AX200 is soldered to the motherboard, but does work thanks to the work of [OpenIntelWireless](https://github.com/OpenIntelWireless/itlwm),
-Wi-Fi and and Bluetooth work out of the box provided you use `AirportItlwm.kext`, `IntelBluetoothFirmware.kext`, and `IntelBluetoothInjector.kext`
+Wi-Fi and and Bluetooth work out of the box provided you use `AirportItlwm.kext`, `IntelBluetoothFirmware.kext`, and `BlueToolFixup.kext`
 
 <img src="https://i.imgur.com/RVzkHnQ.png" width="700">
 <img src="https://i.imgur.com/WKdEeq8.png" width="410">
