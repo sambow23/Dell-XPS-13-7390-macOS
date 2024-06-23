@@ -1,3 +1,5 @@
+### ⚠️ Archive Notice: I no longer own this machine so I am unable to maintain this repo, please fork if you need to make any changes.
+
 Dell XPS 13 7390
 ---
 <img src="https://i.imgur.com/R0RSyT7.jpg" width="1000">
